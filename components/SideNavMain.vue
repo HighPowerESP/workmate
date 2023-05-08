@@ -7,10 +7,11 @@
         
         <div class="lg:w-full w-[55px] mx-auto">
             <NuxtLink to="/">
-                <MenuItem iconString="For You"  colorString="#F02C56" sizeString="30"/>
+                <MenuItem iconString="Para ti"  colorString="#F02C56" sizeString="30"/>
             </NuxtLink>
-            <MenuItem iconString="Following" colorString="#000000" sizeString="27"/>
-            <MenuItem iconString="LIVE" colorString="#000000" sizeString="27"/>
+            <MenuItem iconString="Siguiendo" colorString="#000000" sizeString="27" />
+            <MenuItem iconString="En vivo" colorString="#000000" sizeString="27" />
+            <MenuItem iconString="Trabajo" colorString="#000000" sizeString="27" />
 
             <div class="border-b lg:ml-2 mt-2" />
 

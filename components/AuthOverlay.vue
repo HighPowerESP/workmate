@@ -24,7 +24,7 @@
                     class="text-[14px] text-[#F02C56] font-semibold pl-1"
                 >
                     <span v-if="isRegister">Registrate</span>
-                    <span v-else>Inicia sesion</span>
+                    <span v-else>Inicia sesión</span>
                 </button>
             </div>
             

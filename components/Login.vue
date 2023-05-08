@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center text-[28px] mb-4 font-bold">Iniciar sesion</div>
+    <div class="text-center text-[28px] mb-4 font-bold">Iniciar sesión</div>
 
     <div class="px-6 pb-1.5 text-[15px]">Correo electronico</div>
 
@@ -31,7 +31,7 @@
             @click="login()" 
             class="w-full text-[17px] font-semibold text-white py-3 rounded-sm"
         >
-            Iniciar sesion
+            Iniciar sesión
         </button>
     </div>
 </template>
