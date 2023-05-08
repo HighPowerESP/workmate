@@ -10,7 +10,7 @@
 
             <div class="absolute flex items-center justify-between w-full p-5 left-0 top-0 border-b border-b-gray-300">
                 <div class="text-[22px] font-medium">
-                    Edit profile
+                    Editar perfil
                 </div>
                 <button @click="$generalStore.isEditProfileOpen = false">
                     <Icon name="mdi:close" size="25"/>
@@ -24,7 +24,7 @@
                         class="flex flex-col border-b sm:h-[118px] h-[145px] px-1.5 py-2 w-full"
                     >
                         <div class="font-semibold text-[15px] sm:mb-0 mb-1 text-gray-700 sm:w-[160px] sm:text-left text-center">
-                            Profile photo
+                            Foto de perfil
                         </div>
 
                         <div class="flex items-center justify-center sm:-mt-6">
@@ -53,7 +53,7 @@
                         class="flex flex-col border-b sm:h-[118px]  px-1.5 py-2 mt-1.5  w-full"
                     >
                         <div class="font-semibold text-[15px] sm:mb-0 mb-1 text-gray-700 sm:w-[160px] sm:text-left text-center">
-                            Username
+                            Usuario
                         </div>
 
                         <div class="flex items-center justify-center sm:-mt-6">
@@ -65,8 +65,8 @@
                                     max="30"
                                 />
                                 <div class="text-[11px] text-gray-500 mt-4">
-                                    Usernames can only contain letters, numbers, underscores, and periods. 
-                                    Changing your username will also change your profile link.
+                                    Los nombres de usuario solo pueden contener letras, números, guiones bajos y puntos.
+
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                         class="flex flex-col sm:h-[120px]  px-1.5 py-2 mt-2 w-full"
                     >
                         <div class="font-semibold text-[15px] sm:mb-0 mb-1 text-gray-700 sm:w-[160px] sm:text-left text-center">
-                            Bio
+                            Biografía
                         </div>
 
                         <div class="flex items-center justify-center sm:-mt-6">
@@ -130,7 +130,7 @@
                         @click="$generalStore.isEditProfileOpen = false"
                         class="flex items-center border rounded-sm px-3 py-[6px] hover:bg-gray-100"
                     >
-                        <span class="px-2 font-medium text-[15px]">Cancel</span>
+                        <span class="px-2 font-medium text-[15px]">Cancelar</span>
                     </button>
 
                     <button 
@@ -139,7 +139,7 @@
                         :class="!isUpdated ? 'bg-gray-200' : 'bg-[#F02C56]'"
                         class="flex items-center bg-[#F02C56] text-white border rounded-md ml-3 px-3 py-[6px]"
                     >
-                        <span class="mx-4 font-medium text-[15px]">Save</span>
+                        <span class="mx-4 font-medium text-[15px]">Actualizar</span>
                     </button>
                 </div>
 
@@ -152,14 +152,14 @@
                         @click="uploadedImage = null"
                         class="flex items-center border rounded-sm px-3 py-[6px] hover:bg-gray-100"
                     >
-                        <span class="px-2 font-medium text-[15px]">Cancel</span>
+                        <span class="px-2 font-medium text-[15px]">Cancelar</span>
                     </button>
 
                     <button 
                         @click="cropAndUpdateImage()"
                         class="flex items-center bg-[#F02C56] text-white border rounded-md ml-3 px-3 py-[6px]"
                     >
-                        <span class="mx-4 font-medium text-[15px]">Apply</span>
+                        <span class="mx-4 font-medium text-[15px]">Aplicar</span>
                     </button>
                 </div>
             </div>

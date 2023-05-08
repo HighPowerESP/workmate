@@ -28,11 +28,11 @@ let error = ref('')
 
 watch(() => errorType.value, () => {
     if (errorType.value == 'caption') {
-        error.value = 'Maximum 150 characters.'
+        error.value = 'Maximo 150 caracteres.'
     } else if (errorType.value == 'bio') {
-        error.value = 'Maximum 80 characters.'
+        error.value = 'Maximo 80 caracteres.'
     } else if (errorType.value == 'file') {
-        error.value = 'Unsupported file. Use MP4 instead.'
+        error.value = 'Archivo no soportado, solo es soportado MP4.'
     } else {
         error.value = ''
     }

@@ -12,8 +12,8 @@
     <UploadLayout>
         <div class="w-full mt-[80px] mb-[40px] bg-white shadow-lg rounded-md py-6 md:px-10 px-4">
             <div>
-                <div class="text-[23px] font-semibold">Upload video</div>
-                <div class="text-gray-400 mt-1">Post a video to your account</div>
+                <div class="text-[23px] font-semibold">Sube tu contenido</div>
+                <div class="text-gray-400 mt-1">Sube contenido a tu cuenta y compártelo con todo el mundo</div>
             </div>
 
             <div class="mt-8 md:flex gap-6">
@@ -46,13 +46,13 @@
                     "
                 >
                     <Icon name="majesticons:cloud-upload" size="40" color="#b3b3b1"/>
-                    <div class="mt-4 text-[17px]">Select video to upload</div>
-                    <div class="mt-1.5 text-gray-500 text-[13px]">Or drag and drop a file</div>
+                    <div class="mt-4 text-[17px]">Selecciona el video</div>
+                    <div class="mt-1.5 text-gray-500 text-[13px]">O arrastralo</div>
                     <div class="mt-12 text-gray-400 text-sm">MP4</div>
-                    <div class="mt-2 text-gray-400 text-[13px]">Up to 30 minutes</div>
-                    <div class="mt-2 text-gray-400 text-[13px]">Less than 2 GB</div>
+                    <div class="mt-2 text-gray-400 text-[13px]">Hasta 30 minutos de video</div>
+                    <div class="mt-2 text-gray-400 text-[13px]">Peso menos de 2 GB</div>
                     <div class="px-2 py-1.5 mt-8 text-white text-[15px] w-[80%] bg-[#F02C56] rounded-sm">
-                        Select file
+                        Seleccionar contenido
                     </div>
                     <input 
                         ref="file" 
@@ -108,7 +108,7 @@
                             <div class="text-[11px] pl-1 truncate text-ellipsis">{{ fileData.name }}</div>
                         </div>
                         <button @click="clearVideo" class="text-[11px] ml-2 font-semibold">
-                            Change
+                            Cambiar
                         </button>
                     </div>
                 </div>
@@ -119,21 +119,21 @@
                             <Icon class="mr-4" size="20" name="mdi:box-cutter-off"/>
                         </div>
                         <div>
-                            <div class="text-semibold text-[15px] mb-1.5">Divide videos and edit</div>
+                            <div class="text-semibold text-[15px] mb-1.5">Corta tus videos y editalos</div>
                             <div class="text-semibold text-[13px] text-gray-400">
-                                You can quickly divide videos into multiple parts, remove redundant parts and turn landscape videos into portrait videos
+                                Puedes recortar partes, ademas de convertir videos horizontales en verticales
                             </div>
                         </div>
                         <div class="flex justify-end max-w-[130px] w-full h-full text-center my-auto">
                             <button class="px-8 py-1.5 text-white text-[15px] bg-[#F02C56] rounded-sm">
-                                Edit
+                                Editar
                             </button>
                         </div>
                     </div>
 
                     <div class="mt-5">
                         <div class="flex items-center justify-between">
-                            <div class="mb-1 text-[15px]">Caption</div>
+                            <div class="mb-1 text-[15px]">Titulo</div>
                             <div class="text-gray-400 text-[12px]">{{ caption.length }}/150</div>
                         </div>
                         <input 
@@ -155,13 +155,13 @@
                             @click="discard()"
                             class="px-10 py-2.5 mt-8 border text-[16px] hover:bg-gray-100 rounded-sm"
                         >
-                            Discard
+                            Cancelar
                         </button>
                         <button 
                             @click="createPost()"
                             class="px-10 py-2.5 mt-8 border text-[16px] text-white bg-[#F02C56] rounded-sm"
                         >
-                            Post
+                            Subir
                         </button>
                     </div>
 

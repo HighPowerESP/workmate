@@ -20,26 +20,26 @@
                         class="flex item-center rounded-md py-1.5 px-3.5 mt-3 text-[15px] font-semibold border hover:bg-gray-100"
                     >
                         <Icon class="mt-0.5 mr-1" name="mdi:pencil" size="18"/>
-                        <div>Edit profile</div>
+                        <div>Edita tu perfil</div>
                     </button>
 
                     <button 
                         v-else
                         class="flex item-center rounded-md py-1.5 px-8 mt-3 text-[15px] text-white font-semibold bg-[#F02C56]"
                     >
-                        Follow
+                        Seguir
                     </button>
                 </div>
             </div>
 
             <div class="flex items-center pt-4">
                 <div class="mr-4">
-                    <span class="font-bold">10K</span>
-                    <span class="text-gray-500 font-light text-[15px] pl-1.5">Following</span>
+                    <span class="font-bold">0</span>
+                    <span class="text-gray-500 font-light text-[15px] pl-1.5">Siguiendo</span>
                 </div>
                 <div class="mr-4">
-                    <span class="font-bold">44K</span>
-                    <span class="text-gray-500 font-light text-[15px] pl-1.5">Followers</span>
+                    <span class="font-bold">0</span>
+                    <span class="text-gray-500 font-light text-[15px] pl-1.5">Seguidores</span>
                 </div>
                 <div class="mr-4">
                     <span class="font-bold">{{ allLikes }}</span>
@@ -54,7 +54,7 @@
             <div class="w-full flex items-center pt-4 border-b">
                 <div class="w-60 text-center py-2 text-[17px] font-semibold border-b-2 border-b-black">Videos</div>
                 <div class="w-60 text-gray-500 text-center py-2 text-[17px] font-semibold">
-                    <Icon name="material-symbols:lock-open" class="mb-0.5"/> Liked
+                    <Icon name="material-symbols:lock-open" class="mb-0.5"/> Te han gustado
                 </div>
             </div>
 

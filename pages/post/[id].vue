@@ -29,12 +29,6 @@
                 </button>
             </div>
 
-            <img 
-                class="absolute top-[18px] left-[70px] rounded-full lg:mx-0 mx-auto" 
-                width="45" 
-                src="~/assets/images/tiktok-logo-small.png"
-            >
-
             <video 
                 v-if="$generalStore.selectedPost.video"
                 class="absolute object-cover w-full my-auto z-[-1] h-screen" 
@@ -102,7 +96,7 @@
 
             <div class="px-8 mt-4 text-sm font-bold">
                 <Icon name="mdi:music" size="17"/>
-                original sound - {{ $generalStore.allLowerCaseNoCaps($generalStore.selectedPost.user.name) }}
+                sonido original - {{ $generalStore.allLowerCaseNoCaps($generalStore.selectedPost.user.name) }}
             </div>
 
             <div class="flex items-center px-8 mt-8">
@@ -126,7 +120,7 @@
                     <div class="rounded-full bg-gray-200 p-2 cursor-pointer">
                         <Icon name="bx:bxs-message-rounded-dots" size="25"/>
                     </div>
-                    <span class="text-xs pl-2 text-gray-800 font-semibold">43</span>
+                    <span class="text-xs pl-2 text-gray-800 font-semibold">{{ $generalStore.selectedPost.comments.length }}</span>
                 </div>
             </div>
 
@@ -141,7 +135,7 @@
                     v-if="($generalStore.selectedPost.comments.length < 1)" 
                     class="text-center mt-6 text-xl text-gray-500"
                 >
-                    No comments...
+                    No hay comentarios
                 </div>
 
                 <div 
@@ -195,7 +189,7 @@
                         @blur="inputFocused = false"
                         class="bg-[#F1F1F2] text-[14px] focus:outline-none w-full lg:max-w-[420px] p-2 rounded-lg" 
                         type="text"
-                        placeholder="Add comment..."
+                        placeholder="Añade un comentario..."
                     >
                 </div>
                 <button
@@ -204,7 +198,7 @@
                     :class="comment ? 'text-[#F02C56] cursor-pointer' : 'text-gray-400'" 
                     class="font-semibold text-sm ml-5 pr-1"
                 >
-                    Post
+                    Comentar
                 </button>
             </div>
         </div>

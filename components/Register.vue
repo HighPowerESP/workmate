@@ -1,9 +1,9 @@
 <template>
-    <div class="text-center text-[28px] mb-4 font-bold">Sign up</div>
+    <div class="text-center text-[28px] mb-4 font-bold">Registrarse</div>
 
     <div class="px-6 pb-2">
         <TextInput 
-            placeholder="Full name"
+            placeholder="Usuario"
             v-model:input="name"
             inputType="text"
             :autoFocus="true"
@@ -13,7 +13,7 @@
 
     <div class="px-6 pb-2">
         <TextInput 
-            placeholder="Email address"
+            placeholder="Correo electronico"
             v-model:input="email"
             inputType="email"
             :error="errors && errors.email ? errors.email[0] : ''"
@@ -22,7 +22,7 @@
 
     <div class="px-6 pb-2">
         <TextInput 
-            placeholder="Password"
+            placeholder="Contraseña"
             v-model:input="password"
             inputType="password"
             :error="errors && errors.password ? errors.password[0] : ''"
@@ -31,7 +31,7 @@
 
     <div class="px-6 pb-2">
         <TextInput 
-            placeholder="Confirm password"
+            placeholder="Repetir contraseña"
             v-model:input="confirmPassword"
             inputType="password"
             :error="errors && errors.confirmPassword ? errors.confirmPassword[0] : ''"

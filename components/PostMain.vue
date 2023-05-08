@@ -15,11 +15,16 @@
                 </button>
 
                 <button class="border text-[15px] px-[21px] py-0.5 border-[#F02C56] text-[#F02C56] hover:bg-[#ffeef2] font-semibold rounded-md">
-                    Follow
+                    Seguir
                 </button>
             </div>
             <div class="text-[15px] pb-0.5 break-words md:max-w-[400px] max-w-[300px]">{{ post.text }}</div>
-
+            <div class="text-[14px] text-gray-500 pb-0.5">#fun #cool #SuperAwesome</div>
+            <div class="text-[14px] pb-0.5 flex items-center font-semibold">
+                <Icon name="mdi:music" size="17"/>
+                <div class="px-1">sonido original - AWESOME</div>
+                <Icon name="mdi:heart" size="20"/>
+            </div>
 
             <div class="mt-2.5 flex">
                 <div
@@ -55,14 +60,14 @@
                             <div class="rounded-full bg-gray-200 p-2 cursor-pointer">
                                 <Icon name="bx:bxs-message-rounded-dots" size="25"/>
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold">43</span>
+                            <span class="text-xs text-gray-800 font-semibold">0</span>
                         </div>
 
                         <div class="text-center">
                             <div class="rounded-full bg-gray-200 p-2 cursor-pointer">
                                 <Icon name="ri:share-forward-fill" size="25"/>
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold">55</span>
+                            <span class="text-xs text-gray-800 font-semibold">0</span>
                         </div>
                     </div>
                 </div>

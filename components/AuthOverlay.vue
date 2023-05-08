@@ -18,13 +18,13 @@
             <Register v-else />
 
             <div class="absolute flex items-center justify-center py-5 left-0 bottom-0 border-t w-full">
-                <span class="text-[14px] text-gray-600">Don’t have an account?</span>
+                <span class="text-[14px] text-gray-600">No tienes cuenta?</span>
                 <button 
                     @click="isRegister = !isRegister" 
                     class="text-[14px] text-[#F02C56] font-semibold pl-1"
                 >
-                    <span v-if="isRegister">Sign up</span>
-                    <span v-else>Log in</span>
+                    <span v-if="isRegister">Registrate</span>
+                    <span v-else>Inicia sesion</span>
                 </button>
             </div>
             

@@ -17,7 +17,7 @@
                 <input 
                     type="text" 
                     class="w-full pl-3 my-2 bg-transparent placeholder-[#838383] text-[15px] focus:outline-none"
-                    placeholder="Search accounts"
+                    placeholder="Buscar"
                 >
                 <div class="px-3 py-1 flex items-center border-l border-l-gray-300">
                     <Icon name="ri:search-line" color="#A1A2A7" size="22"/>
@@ -30,7 +30,7 @@
                     class="flex items-center border rounded-sm px-3 py-[6px] hover:bg-gray-100"
                 >
                     <Icon name="mdi:plus" color="#000000" size="22"/>
-                    <span class="px-2 font-medium text-[15px]">Upload</span>
+                    <span class="px-2 font-medium text-[15px]">Subir</span>
                 </button>
 
                 <div v-if="!$userStore.id" class="flex items-center">
@@ -38,7 +38,7 @@
                         @click="$generalStore.isLoginOpen = true" 
                         class="flex items-center bg-[#F02C56] text-white border rounded-md px-3 py-[6px]"
                     >
-                        <span class="mx-4 font-medium text-[15px]">Log in</span>
+                        <span class="mx-4 font-medium text-[15px]">Iniciar sesion</span>
                     </button>
                     <Icon name="mdi:dots-vertical" color="#161724" size="25"/>
                 </div>
@@ -68,14 +68,14 @@
                                 class="flex items-center justify-start py-3 px-2 hover:bg-gray-100 cursor-pointer"
                             >
                                 <Icon name="ph:user" size="20"/>
-                                <span class="pl-2 font-semibold text-sm">Profile</span>
+                                <span class="pl-2 font-semibold text-sm">Perfil</span>
                             </NuxtLink>
                             <div 
                                 @click="logout()"
                                 class="flex items-center justify-start py-3 px-1.5 hover:bg-gray-100 border-t cursor-pointer"
                             >
                                 <Icon name="ic:outline-login" size="20"/>
-                                <span class="pl-2 font-semibold text-sm">Log out</span>
+                                <span class="pl-2 font-semibold text-sm">Cerrar sesion</span>
                             </div>
                         </div>
                     </div>
@@ -94,12 +94,6 @@ const router = useRouter()
 let showMenu = ref(false)
 
 onMounted(() => {
-    /*document.addEventListener('mouseup', function(e) {
-        let popupMenu = document.getElementById('PopupMenu');
-        if (!popupMenu.contains(e.target)) {
-            showMenu.value = false
-        }
-    });*/
 })
 
 const isLoggedIn = () => {
