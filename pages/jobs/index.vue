@@ -332,7 +332,6 @@ import MainLayout from '~/layouts/MainLayout.vue';
   flex-direction: column;
   background-color: #f2f2f2; /* Agrega un fondo gris claro */
   padding: 20px; /* Agrega un relleno para separar las tarjetas del borde del contenedor */
-  margin-bottom: 50px;
 }
 
 .job-container-title {
@@ -453,20 +452,20 @@ import MainLayout from '~/layouts/MainLayout.vue';
 
 
 .job-premium {
-  font-size: 16px;
-  text-decoration: none;
-  color: #000000;
-  background-color: #FFD700;
-  border-radius: 50px;
+background-color: #ffc107;
+  border: none;
+  color: black;
   padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
-  align-self: left;
-  margin-top: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .job-premium:hover {
-  background-color: #a18900;
+    background-color: #ff9800;
 }
 
 </style>

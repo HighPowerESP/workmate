@@ -18,7 +18,7 @@ const { iconString, colorString, sizeString } = toRefs(props)
 
 let icon = ref('')
 
-if (iconString.value === 'Para ti') icon.value = 'mdi:home'
+if (iconString.value === 'Inicio') icon.value = 'mdi:home'
 if (iconString.value === 'Mi red') icon.value = 'ci:group'
 if (iconString.value === 'Empleos') icon.value = 'mdi:briefcase'
 </script>

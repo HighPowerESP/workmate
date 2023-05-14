@@ -7,12 +7,15 @@
         
         <div class="lg:w-full w-[55px] mx-auto">
             <NuxtLink to="/">
-                <MenuItem iconString="Para ti"  colorString="#F02C56" sizeString="30"/>
+                <MenuItem iconString="Inicio"  colorString="#F02C56" sizeString="30"/>
             </NuxtLink>
-            <MenuItem iconString="Mi red" colorString="#000000" sizeString="27" />
-            <NuxtLink to="/jobs">
-                <MenuItem iconString="Empleos" colorString="#000000" sizeString="27" />
-            </NuxtLink>
+            <div v-if="$userStore.id">
+                <MenuItem iconString="Mi red" colorString="#000000" sizeString="27" />
+                <NuxtLink to="/jobs">
+                    <MenuItem iconString="Empleos" colorString="#000000" sizeString="27"  @click="isLoggedIn2()"/>
+                </NuxtLink>
+            </div>
+            
 
             <div class="border-b lg:ml-2 mt-2" />
 
@@ -83,6 +86,14 @@ const isLoggedIn = (fol) => {
         return
     }
     setTimeout(() => router.push(`/profile/${fol.id}`), 200)
+}
+
+const isLoggedIn2 = () => {
+    if ($userStore.id) {
+        router.push('/')
+    } else {
+        $generalStore.isLoginOpen = true
+    }
 }
 
 
