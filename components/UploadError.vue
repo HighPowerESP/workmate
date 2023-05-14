@@ -32,7 +32,7 @@ watch(() => errorType.value, () => {
     } else if (errorType.value == 'bio') {
         error.value = 'Maximo 80 caracteres.'
     } else if (errorType.value == 'file') {
-        error.value = 'Archivo no soportado, solo es soportado MP4.'
+        error.value = 'Archivo no soportado, solo soportamos MP4.'
     } else {
         error.value = ''
     }

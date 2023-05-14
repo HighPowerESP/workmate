@@ -9,9 +9,10 @@
             <NuxtLink to="/">
                 <MenuItem iconString="Para ti"  colorString="#F02C56" sizeString="30"/>
             </NuxtLink>
-            <MenuItem iconString="Siguiendo" colorString="#000000" sizeString="27" />
-            <MenuItem iconString="En vivo" colorString="#000000" sizeString="27" />
-            <MenuItem iconString="Trabajo" colorString="#000000" sizeString="27" />
+            <MenuItem iconString="Mi red" colorString="#000000" sizeString="27" />
+            <NuxtLink to="/jobs">
+                <MenuItem iconString="Empleos" colorString="#000000" sizeString="27" />
+            </NuxtLink>
 
             <div class="border-b lg:ml-2 mt-2" />
 
@@ -62,6 +63,7 @@
             <div class="lg:block hidden text-[11px] text-gray-500">
                 <div class="pt-4 px-2">WorkMate - tu mejor compañia para informarte de tu trabajo</div>
                 <div class="pt-4 px-2">WorkMate © 2023</div>
+                <div class="pt-4 px-2">Activar modo oscuro</div>
             </div>
 
             <div class="pb-14"></div>
@@ -82,4 +84,7 @@ const isLoggedIn = (fol) => {
     }
     setTimeout(() => router.push(`/profile/${fol.id}`), 200)
 }
+
+
+
 </script>

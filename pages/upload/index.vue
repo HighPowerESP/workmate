@@ -92,7 +92,7 @@
                     <img 
                         class="absolute right-4 bottom-6 z-20" 
                         width="90" 
-                        src="~/assets/images/tiktok-logo-white.png"
+                        src="~/assets/images/workmate.png"
                     >
                     <video 
                         autoplay

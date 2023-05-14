@@ -9,7 +9,7 @@
         >
             <div :class="route.fullPath === '/' ? 'w-[80%]' : 'lg:w-[20%] w-[70%]'">
                 <NuxtLink to="/">
-                    <img width="115" src="~/assets/images/tiktok-logo.png">
+                    <img width="115" src="~/assets/images/workmate.png">
                 </NuxtLink>
             </div>
 
@@ -77,6 +77,13 @@
                                 <Icon name="ic:outline-login" size="20"/>
                                 <span class="pl-2 font-semibold text-sm">Cerrar sesion</span>
                             </div>
+                            <div 
+                                @click="darkMode()" id="darkMode"
+                                class="flex items-center justify-start py-3 px-1.5 hover:bg-gray-100 border-t cursor-pointer"
+                            >
+                                <Icon name="ph:moon-fill" size="20"/>
+                                <span class="pl-2 font-semibold text-sm">Modo oscuro</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,4 +119,5 @@ const logout = () => {
         console.log(error)
     }
 }
+
 </script>
