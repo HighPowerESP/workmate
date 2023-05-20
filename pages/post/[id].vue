@@ -33,6 +33,7 @@
                 v-if="$generalStore.selectedPost.video"
                 class="absolute object-cover w-full my-auto z-[-1] h-screen" 
                 :src="$generalStore.selectedPost.video" 
+                
             />
 
             <div 
@@ -42,13 +43,16 @@
                 <Icon class="animate-spin ml-1" name="mingcute:loading-line" size="100" color="#FFFFFF"/>
             </div>
             <div class="bg-black bg-opacity-70 lg:min-w-[480px]">
+            
                 <video 
                     v-if="$generalStore.selectedPost.video"
                     ref="video"
+                    id="player"
                     loop
-                    muted
                     class="h-screen mx-auto" 
                     :src="$generalStore.selectedPost.video"
+                    @click="sound()"
+                    @dblclick="isLiked ? unlikePost() : likePost()"
                 />
             </div>
 
@@ -108,7 +112,7 @@
                         <Icon 
                             name="mdi:heart" 
                             size="25" 
-                            :color="isLiked ? '#F02C56' : ''"
+                            :color="isLiked ? '#c84771' : ''"
                         />
                     </button>
                     <span class="text-xs pl-2 pr-4 text-gray-800 font-semibold">
@@ -195,7 +199,7 @@
                 <button
                     :disabled="!comment"
                     @click="addComment()"
-                    :class="comment ? 'text-[#F02C56] cursor-pointer' : 'text-gray-400'" 
+                    :class="comment ? 'text-[#c84771] cursor-pointer' : 'text-gray-400'" 
                     class="font-semibold text-sm ml-5 pr-1"
                 >
                     Comentar
@@ -346,4 +350,23 @@ const deleteComment = async (post, commentId) => {
         console.log(error)
     }
 }
+
+const sound = () => {
+
+    const player = document.getElementById('player')
+
+    if(player.muted){
+        player.muted = false
+    } else {
+        player.muted = true
+    }
+
+    
+}
+
+const test = () => {
+
+    likePost()
+}
+
 </script>

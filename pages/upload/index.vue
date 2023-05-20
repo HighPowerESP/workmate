@@ -51,7 +51,7 @@
                     <div class="mt-12 text-gray-400 text-sm">MP4</div>
                     <div class="mt-2 text-gray-400 text-[13px]">Hasta 30 minutos de video</div>
                     <div class="mt-2 text-gray-400 text-[13px]">Peso menos de 2 GB</div>
-                    <div class="px-2 py-1.5 mt-8 text-white text-[15px] w-[80%] bg-[#F02C56] rounded-sm">
+                    <div class="px-2 py-1.5 mt-8 text-white text-[15px] w-[80%] bg-[#c84771] rounded-sm">
                         Seleccionar contenido
                     </div>
                     <input 
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                         <div class="flex justify-end max-w-[130px] w-full h-full text-center my-auto">
-                            <button class="px-8 py-1.5 text-white text-[15px] bg-[#F02C56] rounded-sm">
+                            <button class="px-8 py-1.5 text-white text-[15px] bg-[#c84771] rounded-sm">
                                 Editar
                             </button>
                         </div>
@@ -159,7 +159,7 @@
                         </button>
                         <button 
                             @click="createPost()"
-                            class="px-10 py-2.5 mt-8 border text-[16px] text-white bg-[#F02C56] rounded-sm"
+                            class="px-10 py-2.5 mt-8 border text-[16px] text-white bg-[#c84771] rounded-sm"
                         >
                             Subir
                         </button>

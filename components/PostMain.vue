@@ -14,7 +14,7 @@
                     </span>
                 </button>
 
-                <button class="border text-[15px] px-[21px] py-0.5 border-[#F02C56] text-[#F02C56] hover:bg-[#ffeef2] font-semibold rounded-md">
+                <button class="border text-[15px] px-[21px] py-0.5 border-[#c84771] text-[#c84771] hover:bg-[#ffeef2] font-semibold rounded-md">
                     Seguir
                 </button>
             </div>
@@ -50,7 +50,7 @@
                                 <Icon 
                                     name="mdi:heart" 
                                     size="25" 
-                                    :color="isLiked ? '#F02C56' : ''"
+                                    :color="isLiked ? '#c84771' : ''"
                                 />
                             </button>
                             <span class="text-xs text-gray-800 font-semibold">{{ post.likes.length }}</span>
@@ -88,10 +88,8 @@ let video = ref(null)
 onMounted(() => {
     let observer = new IntersectionObserver(function(entries) {
         if (entries[0].isIntersecting) {
-            console.log('Element is playing' + post.value.id);
             video.value.play()
         } else {
-            console.log('Element is paused' + post.value.id);
             video.value.pause()
         }
 

@@ -21,7 +21,7 @@
                 <span class="text-[14px] text-gray-600">No tienes cuenta?</span>
                 <button 
                     @click="isRegister = !isRegister" 
-                    class="text-[14px] text-[#F02C56] font-semibold pl-1"
+                    class="text-[14px] text-[#c84771] font-semibold pl-1"
                 >
                     <span v-if="isRegister">Registrate</span>
                     <span v-else>Inicia sesión</span>

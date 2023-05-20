@@ -7,7 +7,7 @@
         
         <div class="lg:w-full w-[55px] mx-auto">
             <NuxtLink to="/">
-                <MenuItem iconString="Inicio"  colorString="#F02C56" sizeString="30"/>
+                <MenuItem iconString="Inicio"  colorString="#c84771" sizeString="30"/>
             </NuxtLink>
             <div v-if="$userStore.id">
                 <MenuItem iconString="Mi red" colorString="#000000" sizeString="27" />
@@ -36,7 +36,7 @@
             </div>
 
 
-            <button class="lg:block hidden text-[#F02C56] pt-1.5 pl-2 text-[13px]">
+            <button class="lg:block hidden text-[#c84771] pt-1.5 pl-2 text-[13px]">
                 Ver todo
             </button>
 
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <button class="lg:block hidden text-[#F02C56] pt-1.5 pl-2 text-[13px]">Ver más</button>
+                <button class="lg:block hidden text-[#c84771] pt-1.5 pl-2 text-[13px]">Ver más</button>
 
             </div>
             <div class="lg:block hidden border-b lg:ml-2 mt-2" />

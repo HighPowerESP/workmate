@@ -136,8 +136,8 @@
                     <button 
                         :disabled="!isUpdated"
                         @click="updateUserInfo()"
-                        :class="!isUpdated ? 'bg-gray-200' : 'bg-[#F02C56]'"
-                        class="flex items-center bg-[#F02C56] text-white border rounded-md ml-3 px-3 py-[6px]"
+                        :class="!isUpdated ? 'bg-gray-200' : 'bg-[#c84771]'"
+                        class="flex items-center bg-[#c84771] text-white border rounded-md ml-3 px-3 py-[6px]"
                     >
                         <span class="mx-4 font-medium text-[15px]">Actualizar</span>
                     </button>
@@ -157,7 +157,7 @@
 
                     <button 
                         @click="cropAndUpdateImage()"
-                        class="flex items-center bg-[#F02C56] text-white border rounded-md ml-3 px-3 py-[6px]"
+                        class="flex items-center bg-[#c84771] text-white border rounded-md ml-3 px-3 py-[6px]"
                     >
                         <span class="mx-4 font-medium text-[15px]">Aplicar</span>
                     </button>

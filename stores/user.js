@@ -108,7 +108,6 @@ export const useUserStore = defineStore('user', {
       } else {
         singlePost = useGeneralStore().posts.find(p => p.id === post.id)
       }
-      console.log(singlePost)
       singlePost.likes.push(res.data.like)
     },
 

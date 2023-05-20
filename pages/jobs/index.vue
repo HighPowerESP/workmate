@@ -338,7 +338,7 @@ import MainLayout from '~/layouts/MainLayout.vue';
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #F02C56;
+  color: #c84771;
 }
 
 .job-container-description {
@@ -405,7 +405,7 @@ import MainLayout from '~/layouts/MainLayout.vue';
 }
 
 .job-apply {
-  background-color: #F02C56;
+  background-color: #c84771;
   border-radius: 5px;
   color: #fff;
   font-size: 14px;
@@ -437,7 +437,7 @@ import MainLayout from '~/layouts/MainLayout.vue';
   font-size: 16px;
   text-decoration: none;
   color: #fff;
-  background-color: #F02C56;
+  background-color: #c84771;
   border-radius: 50px;
   padding: 10px 20px;
   transition: background-color 0.3s ease;

@@ -25,7 +25,7 @@
 
                     <button 
                         v-else
-                        class="flex item-center rounded-md py-1.5 px-8 mt-3 text-[15px] text-white font-semibold bg-[#F02C56]"
+                        class="flex item-center rounded-md py-1.5 px-8 mt-3 text-[15px] text-white font-semibold bg-[#c84771]"
                     >
                         Seguir
                     </button>
